@@ -19,9 +19,11 @@ int main(int argc, char** argv) {
 	dim3 blkDim(size/2, 1, 1);	
 
 	reduce <<<grdDim, blkDim>>>(d_v, size);
-
+	cudaDeviceSynchronize();
+	
 	int sum;
 	cudaMemcpy(&sum, d_v, 1 * sizeof(int), cudaMemcpyDeviceToHost);
+	cudaFree(d_v);
 
 	std::cout << "Somme ( ";
 	for (int i = 0; i < size; i++) {

@@ -4,7 +4,7 @@ A generic parallel redcution using a single block (implemented in CUDA).
 ## Compilation
 
     # run from repo dir
-    nvcc -o out/generic-reducation generic-reduction.cu
+    nvcc -o out/generic-reduction generic-reduction.cu
 
 ## TODOs
 - [x] push the integer version
