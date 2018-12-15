@@ -110,4 +110,4 @@ void reduce(T *v, const int n, Op op)
 		}
 		__syncthreads();
 	}
-}
+};
