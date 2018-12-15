@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
 
 	// Max
 	Max<int> maxOp;
-	reduce<int, Max<int>> <<<grdDim, blkDim >> >(d_v, size, maxOp);
+	reduce<int, Max<int>> <<<grdDim, blkDim >>>(d_v, size, maxOp);
 	
 	cudaDeviceSynchronize();
 	
