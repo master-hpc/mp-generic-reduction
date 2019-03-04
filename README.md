@@ -1,5 +1,5 @@
 # "Generic Reduction"
-A generic parallel redcution using a single block (implemented in CUDA).
+>A generic parallel redcution using a single block (implemented in CUDA).
 
 ## Compilation
 
